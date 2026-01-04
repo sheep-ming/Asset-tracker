@@ -1,0 +1,12 @@
+{
+    "display_name": "애셋 트래커", 
+    "loading_order": 50,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "Ggang",
+    "version": "1.0.0",
+    "homePage": "https://github.com/sheep-ming/Asset-tracker",
+    "description": "새 애셋 이미지를 확인하면 리스트와 수집률을 갱신합니다."
+}

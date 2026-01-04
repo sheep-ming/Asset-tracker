@@ -1,0 +1,59 @@
+/* style.css - Asset Tracker 디자인 */
+
+/* 1. 기본 리스트 아이템 스타일 */
+.asset-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid var(--SmartThemeBorderColor);
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    margin-bottom: 2px;
+}
+
+/* 2. 마우스 올렸을 때 효과 */
+.asset-item:hover {
+    background-color: var(--SmartThemeBlurTintColor);
+}
+
+/* 3. 해금된 상태 (Unlocked) */
+.asset-item.unlocked {
+    opacity: 1.0;
+    color: var(--SmartThemeBodyColor);
+    font-weight: bold;
+    background-color: rgba(0, 255, 0, 0.05); /* 아주 연한 초록빛 */
+}
+
+/* 4. 잠긴 상태 (Locked) */
+.asset-item.locked {
+    opacity: 0.5;
+    color: var(--grey70); /* 또는 gray */
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* 5. 아이콘 스타일 */
+.asset-icon {
+    margin-right: 12px;
+    font-size: 1.2em;
+    min-width: 25px;
+    text-align: center;
+}
+
+/* 6. 파일명 스타일 */
+.asset-name {
+    flex: 1;
+    word-break: break-all;
+}
+
+/* 7. 하단 통계 박스 */
+.asset-stats-box {
+    margin-top: 15px;
+    padding: 12px;
+    background: var(--SmartThemeBlurTintColor);
+    border: 1px solid var(--SmartThemeBorderColor);
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
